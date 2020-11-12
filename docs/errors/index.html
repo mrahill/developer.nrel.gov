@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        General Web Service Errors 
+          APIs
+        |
+      NREL: Developer Network
+    </title>
+
+    <link rel="canonical" href="https://developer.nrel.gov/docs/errors/" />
+    <script>
+      if(window.location.href.indexOf('nrel.github.io') !== -1) {
+        window.location.href = 'https://developer.nrel.gov/docs/errors/';
+      }
+    </script>
+
+    <link href="/assets/stylesheets/all-2b7f33b3.css" rel="stylesheet" />
+
+    <script src="/assets/javascripts/shared-8f31eae2.js"></script>
+    <script src="/assets/javascripts/all-172ea8d4.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </head>
+  <body class="docs docs_errors docs_errors_index">
+    <div class="container">
+  <header>
+    <map name="header_map">
+        <area shape="rect" coords="0,0,840,58" href="/" alt="Developer Network" />
+      <area shape="rect" coords="840,0,1000,58" href="http://www.nrel.gov/" alt="NREL" />
+    </map>
+    <img src="/assets/images/nrel/header-1bfbcb1a.png" alt="NREL Developer Network" usemap="#header_map" width="1000" height="58" class="img-fluid" />
+  </header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_nav" aria-controls="navbar_nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar_nav">
+      <ul class="navbar-nav">
+        <li class="nav-item nav-home "><a href="/" class="nav-link">Home</a></li>
+        <li class="nav-item nav-documentation active"><a href="/docs" class="nav-link">Documentation</a></li>
+        <li class="nav-item nav-community "><a href="/community" class="nav-link">Community</a></li>
+      </ul>
+    </div>
+  </nav>
+
+      <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
+            <li class="breadcrumb-item active">General Web Service Errors</li>
+    </ol>
+
+
+    <h1 id="general-web-service-errors">General Web Service Errors</h1>
+
+<p>Certain, general errors will be returned in a standardized way from all API Umbrella web services. Additional, service-specific error messages may also be returned (see individual service documentation for those details). The following list describes the general errors any application may return:</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="doc-parameters">
+  <thead>
+    <tr>
+      <th class="doc-parameters-name" scope="col" style="width: 100px;">Error Code</th>
+      <th class="doc-parameters-name" scope="col" style="width: 100px;">HTTP Status Code</th>
+      <th class="doc-parameters-required" scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="doc-parameter-name" scope="row">API_KEY_MISSING</th>
+      <td class="doc-parameter-name">403</td>
+      <td class="doc-parameter-description">
+        An API key was not supplied. See <a href="/docs/api-key/">API key usage</a> for details on how to pass your API key to the API.
+      </td>
+    </tr>
+    <tr>
+      <th class="doc-parameter-name" scope="row">API_KEY_INVALID</th>
+      <td class="doc-parameter-name">403</td>
+      <td class="doc-parameter-description">
+        An invalid API key was supplied. Double check that the API key being passed in is valid, or <a href="/signup/">signup</a> for an API key.
+      </td>
+    </tr>
+    <tr>
+      <th class="doc-parameter-name" scope="row">API_KEY_DISABLED</th>
+      <td class="doc-parameter-name">403</td>
+      <td class="doc-parameter-description">
+        The API key supplied has been disabled by an administrator. Please <a href="/contact/">contact us</a> for assistance.
+      </td>
+    </tr>
+    <tr>
+      <th class="doc-parameter-name" scope="row">API_KEY_UNAUTHORIZED</th>
+      <td class="doc-parameter-name">403</td>
+      <td class="doc-parameter-description">
+        The API key supplied is not authorized to access the given service. Please <a href="/contact/">contact us</a> for assistance.
+      </td>
+    </tr>
+    <tr>
+      <th class="doc-parameter-name" scope="row">API_KEY_UNVERIFIED</th>
+      <td class="doc-parameter-name">403</td>
+      <td class="doc-parameter-description">
+        The API key supplied has not been verified yet. Please check your e-mail to verify the API key. Please <a href="/contact/">contact us</a> for assistance.
+      </td>
+    </tr>
+    <tr>
+      <th class="doc-parameter-name" scope="row">HTTPS_REQUIRED</th>
+      <td class="doc-parameter-name">400</td>
+      <td class="doc-parameter-description">
+        Requests to this API must be made over HTTPS. Ensure that the URL being used is over HTTPS.
+      </td>
+    </tr>
+    <tr>
+      <th class="doc-parameter-name" scope="row">OVER_RATE_LIMIT</th>
+      <td class="doc-parameter-name">429</td>
+      <td class="doc-parameter-description">
+        The API key has exceeded the rate limits. See <a href="/docs/rate-limits/">rate limits</a> for more details or <a href="/contact/">contact us</a> for assistance.
+      </td>
+    </tr>
+    <tr>
+      <th class="doc-parameter-name" scope="row">NOT_FOUND</th>
+      <td class="doc-parameter-name">404</td>
+      <td class="doc-parameter-description">
+        An API could not be found at the given URL. Check your URL.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="error-response-body">Error Response Body</h2>
+
+<p>The error response body will contain an error code value from the table above and a brief description of the error. The descriptions are subject to change, so it's suggested any error handling use the HTTP status code or the error code value for error handling (and not the content of the message description).</p>
+
+<h3 id="error-message-response-formats">Error Message Response Formats</h3>
+<p>Depending on the detected format of the request, the error message response may be returned in JSON, XML, CSV, or HTML. Requests of an unknown format will return errors in JSON format.</p>
+
+<h4 id="json-example">JSON Example</h4>
+
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"API_KEY_MISSING"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No api_key was supplied. Get one at https://developer.nrel.gov"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<h4 id="xml-example">XML Example</h4>
+
+<div class="highlight"><pre class="highlight xml"><code><span class="nt">&lt;response&gt;</span>
+  <span class="nt">&lt;error&gt;</span>
+    <span class="nt">&lt;code&gt;</span>API_KEY_MISSING<span class="nt">&lt;/code&gt;</span>
+    <span class="nt">&lt;message&gt;</span>No api_key was supplied. Get one at https://developer.nrel.gov<span class="nt">&lt;/message&gt;</span>
+  <span class="nt">&lt;/error&gt;</span>
+<span class="nt">&lt;/response&gt;</span>
+</code></pre></div>
+<h4 id="csv-example">CSV Example</h4>
+
+<div class="highlight"><pre class="highlight plaintext"><code>Error Code,Error Message
+API_KEY_MISSING,No api_key was supplied. Get one at https://developer.nrel.gov
+</code></pre></div>
+<h4 id="html-example">HTML Example</h4>
+
+<div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>API_KEY_MISSING<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>No api_key was supplied. Get one at https://developer.nrel.gov<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+    <div style="text-align: center; font-style: italic; padding: 3em 0.5em 0em 0.5em;">
+  <a href="https://github.com/NREL/developer.nrel.gov/blob/master/source/docs/errors.html.md.erb">Help Improve this Content</a>
+</div>
+
+      <footer class="container-fluid">
+    <div align="center"><img src="/assets/images/nrel/foot_nrelis-8e56f120.gif" alt="NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC." usemap="#footer_map" class="img-fluid" /></div>
+
+    <map name="footer_map" id="footer_map">
+      <area shape="rect" coords="27,7,61,20" href="http://www.nrel.gov/" alt="NREL" />
+      <area shape="rect" coords="238,7,399,19" href="http://www.energy.gov/" alt="U.S. Department of Energy" />
+      <area shape="rect" coords="405,7,697,21" href="http://www.eere.energy.gov/" alt="Office of Energy Efficiency and Renewable Energy" />
+      <area shape="rect" coords="307,21,524,35" href="http://www.allianceforsustainableenergy.org/" alt="Alliance for Sustainable Energy, LLC" />
+    </map>
+
+    <p><a href="/contact">Need Help?</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.nrel.gov/security.html">Security &amp; Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.nrel.gov/disclaimer.html">Disclaimer</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.nrel.gov/">NREL Home</a></p>
+  </footer>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        API Key Signup 
+        |
+      NREL: Developer Network
+    </title>
+
+    <link rel="canonical" href="https://developer.nrel.gov/signup/" />
+    <script>
+      if(window.location.href.indexOf('nrel.github.io') !== -1) {
+        window.location.href = 'https://developer.nrel.gov/signup/';
+      }
+    </script>
+
+    <link href="/assets/stylesheets/all-2b7f33b3.css" rel="stylesheet" />
+
+    <script src="/assets/javascripts/shared-8f31eae2.js"></script>
+    <script src="/assets/javascripts/all-172ea8d4.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </head>
+  <body class="signup signup_index">
+    <div class="container">
+  <header>
+    <map name="header_map">
+        <area shape="rect" coords="0,0,840,58" href="/" alt="Developer Network" />
+      <area shape="rect" coords="840,0,1000,58" href="http://www.nrel.gov/" alt="NREL" />
+    </map>
+    <img src="/assets/images/nrel/header-1bfbcb1a.png" alt="NREL Developer Network" usemap="#header_map" width="1000" height="58" class="img-fluid" />
+  </header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_nav" aria-controls="navbar_nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar_nav">
+      <ul class="navbar-nav">
+        <li class="nav-item nav-home "><a href="/" class="nav-link">Home</a></li>
+        <li class="nav-item nav-documentation "><a href="/docs" class="nav-link">Documentation</a></li>
+        <li class="nav-item nav-community "><a href="/community" class="nav-link">Community</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+
+    <h1>API Key Signup</h1>
+
+  <div id="apidatagov_signup">Loading signup form...</div>
+  <script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var apiUmbrellaSignupOptions = {
+    // Pick a short, unique name to identify your site, like 'gsa-auctions'
+    // in this example.
+    registrationSource: 'nrel',
+
+    // Enter the API key you signed up for and specially configured for this
+    // API key signup embed form.
+    apiKey: 'wwBFDa7NMp0mt8xpl0E4rMaVgsoxVGZSVzzivzoU',
+
+    // Provide an example URL you want to show to users after they signup.
+    // This can be any API endpoint on your server, and you can use the
+    // special {{api_key}} variable to automatically substitute in the API
+    // key the user just signed up for.
+    exampleApiUrl: 'https://developer.nrel.gov/api/alt-fuel-stations/v1.json?fuel_type=E85,ELEC&state=CA&limit=2&api_key={{api_key}}',
+
+    // OPTIONAL: Provide extra content to display on the signup confirmation
+    // page. This will be displayed below the user's API key and the example
+    // API URL are shown. HTML is allowed. Defaults to ""
+    // signupConfirmationMessage: '',
+
+    // OPTIONAL: Provide a URL to your own contact page to link to for user
+    // support. Defaults to "https://api.data.gov/contact/"
+    contactUrl: 'https://developer.nrel.gov/contact/',
+
+    // OPTIONAL: Set to true to verify the user's e-mail address by only
+    // sending them their API key via e-mail, and not displaying it on the
+    // signup confirmation web page. Defaults to false.
+    // verifyEmail: true,
+
+    // OPTIONAL: Set to false to disable sending a welcome e-mail to the
+    // user after signing up. Defaults to true.
+    // sendWelcomeEmail: false,
+
+    // OPTIONAL: Provide the name of your developer site. This will appear
+    // in the subject of the welcome e-mail as "Your {{siteName}} API key".
+    // Defaults to "api.data.gov".
+    siteName: 'NREL Developer Network',
+
+    // OPTIONAL: Provide a custom sender name for who the welcome email
+    // appears from. The actual address will be "noreply@api.data.gov", but
+    // this will change the name of the displayed sender in this fashion:
+    // "{{emailFromName}} <noreply@api.data.gov>". Defaults to "".
+    emailFromName: 'NREL Developer Network',
+
+    // OPTIONAL: Provide an extra input field to ask for the user's website.
+    // Defaults to false.
+    websiteInput: true,
+
+    // OPTIONAL: Provide an extra checkbox asking the user to agree to terms
+    // and conditions before signing up. Defaults to false.
+    termsCheckbox: true,
+
+    // OPTIONAL: If the terms & conditions checkbox is enabled, link to this
+    // URL for your API's terms & conditions. Defaults to "".
+    termsUrl: "/terms/",
+  };
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var apiUmbrella = document.createElement('script'); apiUmbrella.type = 'text/javascript'; apiUmbrella.async = true;
+    apiUmbrella.src = 'https://api.data.gov/static/javascripts/signup_embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(apiUmbrella);
+  })();
+</script>
+<noscript>Please enable JavaScript to signup for a <a href="/">developer.nrel.gov</a> API key.</noscript>
+
+    <div style="text-align: center; font-style: italic; padding: 3em 0.5em 0em 0.5em;">
+  <a href="https://github.com/NREL/developer.nrel.gov/blob/master/source/signup.html.erb">Help Improve this Content</a>
+</div>
+
+      <footer class="container-fluid">
+    <div align="center"><img src="/assets/images/nrel/foot_nrelis-8e56f120.gif" alt="NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC." usemap="#footer_map" class="img-fluid" /></div>
+
+    <map name="footer_map" id="footer_map">
+      <area shape="rect" coords="27,7,61,20" href="http://www.nrel.gov/" alt="NREL" />
+      <area shape="rect" coords="238,7,399,19" href="http://www.energy.gov/" alt="U.S. Department of Energy" />
+      <area shape="rect" coords="405,7,697,21" href="http://www.eere.energy.gov/" alt="Office of Energy Efficiency and Renewable Energy" />
+      <area shape="rect" coords="307,21,524,35" href="http://www.allianceforsustainableenergy.org/" alt="Alliance for Sustainable Energy, LLC" />
+    </map>
+
+    <p><a href="/contact">Need Help?</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.nrel.gov/security.html">Security &amp; Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.nrel.gov/disclaimer.html">Disclaimer</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.nrel.gov/">NREL Home</a></p>
+  </footer>
+</div>
+
+  </body>
+</html>
